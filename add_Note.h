@@ -12,9 +12,9 @@ void add_Note()
     else
     {
         printf("\nEnter the date (DD/MM/YY):");
-        scantf("%s", date);
+        scanf("%s", date);
         printf("\nEnter the time (HH:MM):");
-        scantf("%s", tim);
+        scanf("%s", tim);
         printf("\nEnter the note: ");
         getchar();
         fgets(note, sizeof(note), stdin);
