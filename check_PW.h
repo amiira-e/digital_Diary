@@ -21,17 +21,15 @@ void checkPW()
     }
     pw[k]='\0';
     printf("\nEnter the password: ");
-    pass[0]=getch();
+    scanf("%s", pass);
     if(strcmp(pass, pw)==0)
     {
         printf("\nACCESS GRANTED!!!");
-        break;
     }
-        else
-        {
+    else
+    {
             printf("\nACCESS DENIED!!!\nWrong password");
-        }
-    }
+     }
     fclose(ptr);
 }
 #endif
