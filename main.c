@@ -9,9 +9,9 @@
 #include"view_Diary.h"
 void main()
 {
-    //add_Note();
-    //checkPW();
-    //changePW();
+    add_Note();
+    checkPW();
+    changePW();
     deleteNote();
-    //viewDiary();
+    viewDiary();
 }
