@@ -14,7 +14,23 @@ void changePW()
     else
     {
         printf("\nEnter the new password: ");
-        scanf("%s", pass);
+        pass[0]=getch();
+        while(pass[i]!='\r')
+        {
+            if(pass[i]=='\b')
+            {
+                i--;
+                printf("\b \b");
+                pass[i]=getch();
+            }
+            else
+            {
+                printf("*");
+                i++;
+                pass[i]=getch();
+            }
+        }
+        pass[i]='\0';
         printf("\n");
         fprintf(ptr, "%s", pass);
     }
