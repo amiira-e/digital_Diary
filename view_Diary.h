@@ -4,7 +4,7 @@ void viewDiary()
 {
     FILE *ptr;
     int c;
-    ptr=fopen("personalDiary.txt", "r");
+    ptr=fopen("personal_Diary.txt", "r");
     printf("\n");
     if(ptr==NULL)
     {

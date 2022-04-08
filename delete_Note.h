@@ -7,7 +7,7 @@ void deleteNote()
     int del, lineNum=0;
     printf("\n\nEnter the note to be deleted (for nth note, enter n): ");
     scanf("%d", &del);
-    ptr1=fopen("personalDiary.txt","r");
+    ptr1=fopen("personal_Diary.txt","r");
     ptr2=fopen("temp.txt", "w");
     if(ptr1==NULL)
     {
@@ -40,6 +40,6 @@ void deleteNote()
     fclose(ptr1);
     fclose(ptr2);
     remove("personalDiary.txt");
-    rename("temp.txt", "personalDiary.txt");
+    rename("temp.txt", "personal_Diary.txt");
 }
 #endif
