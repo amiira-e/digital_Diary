@@ -7,7 +7,7 @@ void addNote()
     ptr=fopen("personal_Diary.txt", "a");
     if(ptr==NULL)
     {
-        printf("\nERROR!!!\nFile not found.");
+        printf("\nERROR!!!\nFile is not found.");
     }
     else
     {
