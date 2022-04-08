@@ -10,8 +10,8 @@
 void main()
 {
     addNote();
-    checkPW();
-    changePW();
-    deleteNote();
+    //checkPW();
+    //changePW();
+    //deleteNote();
     viewDiary();
 }
