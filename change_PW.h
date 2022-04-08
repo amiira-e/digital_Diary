@@ -1,6 +1,6 @@
-#ifndef CHANGE_PW
-#define CHANGE_PW
-void change_PW()
+#ifndef CHANGEPW
+#define CHANGEPW
+void changePW()
 {
     FILE *ptr;
     int c, i=0;
