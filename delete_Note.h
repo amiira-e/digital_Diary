@@ -39,7 +39,7 @@ void deleteNote()
     }
     fclose(ptr1);
     fclose(ptr2);
-    remove("personalDiary.txt");
+    remove("personal_Diary.txt");
     rename("temp.txt", "personal_Diary.txt");
 }
 #endif
