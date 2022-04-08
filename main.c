@@ -9,7 +9,7 @@
 #include"view_Diary.h"
 void main()
 {
-    add_Note();
+    addNote();
     checkPW();
     changePW();
     deleteNote();
