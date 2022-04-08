@@ -1,6 +1,6 @@
-#ifndef ADD_NOTE
-#define ADD_NOTE
-void add_Note()
+#ifndef ADDNOTE
+#define ADDNOTE
+void addNote()
 {
     FILE *ptr;
     char note[1000], tim[20], date[20];
