@@ -36,6 +36,23 @@ void deleteNote()
                 break;
             }
         }
+        del++;
+        if(del==2)
+        {
+            printf("%dst note is deleted\n",del-1);
+        }
+        else if(del==3)
+        {
+            printf("%dnd note is deleted\n",del-1);
+        }
+        else if (del==4)
+        {
+            printf("%drd note is deleted\n",del-1);
+        }
+        else
+        {
+            printf("%dth note is deleted\n",del-1);
+        }
     }
     fclose(ptr1);
     fclose(ptr2);
