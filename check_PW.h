@@ -3,7 +3,7 @@
 void checkPW()
 {
     FILE *ptr;
-    int c, k=0;
+    int c, k=0, i;
     char pw[100], pass[100];
     ptr=fopen("password.txt", "r");
     printf("\n");
@@ -20,16 +20,34 @@ void checkPW()
         }
     }
     pw[k]='\0';
+    i=0;
     printf("\nEnter the password: ");
-    scanf("%s", pass);
+    //scanf("%s", pass);
+    pass[0]=getch();
+    while(pass[i]!='\r')
+    {
+        if(pass[i]=='\b')
+        {
+            i--;
+            printf("\b \b");
+            pass[i]=getch();
+        }
+        else
+        {
+            printf("*");
+            i++;
+            pass[i]=getch();
+        }
+    }
+    pass[i]='\0';
     if(strcmp(pass, pw)==0)
     {
         printf("\nACCESS GRANTED!!!");
     }
     else
     {
-            printf("\nACCESS DENIED!!!\nWrong password");
-     }
+        printf("\nACCESS DENIED!!!\nWrong password");
+    }
     fclose(ptr);
 }
 #endif
