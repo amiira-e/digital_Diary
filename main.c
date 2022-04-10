@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 #include<conio.h>
+#include<time.h>
+#include<windows.h>
 #include"add_Note.h"
 #include"change_PW.h"
 #include"check_PW.h"
@@ -13,5 +15,5 @@ void main()
     //checkPW();
     //changePW();
     //deleteNote();
-    viewDiary();
+    //viewDiary();
 }
