@@ -6,7 +6,7 @@ void deleteNote()
     char note[1000], note1[1000], NID[10];
     ptr1=fopen("personal_Diary.txt","r");
     ptr2=fopen("temp.txt","a");
-    printf("Enter the note ID you want to delete: ");
+    printf("\n\nEnter the note ID you want to delete: ");
     scanf("%s", NID);
     while(!feof(ptr1))
     {
