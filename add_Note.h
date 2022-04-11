@@ -4,7 +4,7 @@ void addNote()
 {
     FILE *ptr;
     int j=40, yr, count=1;
-    char note[1000], *ti, *day, *date, *m, *x;
+    char id[10], note[1000], *ti, *day, *date, *m, *x;
     time_t t=time(NULL);
     struct tm tm=*localtime(&t);
     yr=tm.tm_year+1900;
@@ -36,9 +36,12 @@ void addNote()
     }
     else
     {
+        printf("\nEnter the note ID (in 3 digits): ");
+        scanf("%s", id);
         printf("\nEnter the note: ");
-        fgets(note, sizeof(note), stdin);
-        fprintf(ptr,"%s %s %s %d             %s           %s", day, date, m, yr, ti, note);
+        getchar();
+        fgets(note, sizeof(note), stdin); 
+        fprintf(ptr,"%s             %s %s %s %d             %s           %s", id, day, date, m, yr, ti, note);
     }
     fclose(ptr);
 }
