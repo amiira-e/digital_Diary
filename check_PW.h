@@ -1,9 +1,9 @@
 #ifndef CHECKPW
 #define CHECKPW
-void checkPW()
+int checkPW()
 {
     FILE *ptr;
-    int c, k=0, i;
+    int c, i, k=0, j, access=0;
     char pw[100], pass[100];
     ptr=fopen("password.txt", "r");
     printf("\n");
@@ -20,34 +20,45 @@ void checkPW()
         }
     }
     pw[k]='\0';
-    i=0;
-    printf("\nEnter the password: ");
-    //scanf("%s", pass);
-    pass[0]=getch();
-    while(pass[i]!='\r')
+    printf("\nYou have 3 trials to enter the correct password!");
+    for(j=0;j<3;j++)
     {
-        if(pass[i]=='\b')
+        i=0;
+        printf("\n\nTRIAL %d", j+1);
+        printf("\nEnter the password: ");
+        pass[0]=getch();
+        while(pass[i]!='\r')
         {
-            i--;
-            printf("\b \b");
-            pass[i]=getch();
+            if(pass[i]=='\b')
+            {
+                i--;
+                printf("\b \b");
+                pass[i]=getch();
+            }
+            else
+            {
+                printf("*");
+                i++;
+                pass[i]=getch();
+            }
+        }
+        pass[i]='\0';
+        if(strcmp(pass, pw)==0)
+        {
+            printf("\nACCESS GRANTED!!!");
+            access=1;
+            break;
         }
         else
         {
-            printf("*");
-            i++;
-            pass[i]=getch();
+            printf("\nACCESS DENIED!!!\nWrong password");
         }
     }
-    pass[i]='\0';
-    if(strcmp(pass, pw)==0)
+    if(j==3 && access==0)
     {
-        printf("\nACCESS GRANTED!!!");
-    }
-    else
-    {
-        printf("\nACCESS DENIED!!!\nWrong password");
+        printf("\n\nWRONG PASSWORD!!!\nYou have no access to the diary.");
     }
     fclose(ptr);
+    return access;
 }
 #endif
