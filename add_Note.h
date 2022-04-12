@@ -83,7 +83,7 @@ void addNote()
         {
             printf("\xB2");
         }
-        printf("\n");
+        printf("\n\n");
         fclose(ptr);
     }
 }
