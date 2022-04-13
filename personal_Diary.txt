@@ -1,8 +1,4 @@
 NOTE ID         DATE                        TIME               NOTE
-<<<<<<< HEAD
 001             Sun 10 Apr 2022             10:04:01           Today Samantha came home to see my new puppy.She was so surprised by its miniature size!
 002             Mon 11 Apr 2022             16:21:40           Mom was very sick this morning.She started throwing up.We immediately had to rush her to the nearby hospital. 003             Wed 13 Apr 2022             16:46:50           Mala and i went to Milo's birthday party this evening.Needless to say how we had so much fun!
-=======
-001             Sun 10 Apr 2022             10:04:01           party timeee
-002             Mon 11 Apr 2022             16:21:40           Done for the day
->>>>>>> b9d29ddc922c4a1e29c98816208b9d6f43bd3639
+
