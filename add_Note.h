@@ -60,7 +60,7 @@ void addNote()
         ptr=fopen("personal_Diary.txt", "a");
         fprintf(ptr,"%s             %s %s %s %d             %s           %s", id, day, date, m, yr, ti, note);
         fclose(ptr);
-        ptr=fopen("personalDiary.txt","a");
+        ptr=fopen("personal_Diary.txt","a");
         printf("\n\n\t\t\t\t\t%c INTERFACE OF THE DIARY AFTER ADDING A NEW NOTE %c \n\n",num,num);
         for(int i=0;i<139;i++)
         {
