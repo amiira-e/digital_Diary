@@ -1,3 +1,3 @@
 NOTE ID         DATE                        TIME               NOTE
-001             Sun 10 Apr 2022             10:04:01           party timeee
-002             Mon 11 Apr 2022             16:21:40           
+001             Sun 10 Apr 2022             10:04:01           Today Samantha came home to see my new puppy.She was so surprised by its miniature size!
+002             Mon 11 Apr 2022             16:21:40           Mom was very sick this morning.She started throwing up.We immediately had to rush her to the nearby hospital. 
