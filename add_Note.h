@@ -3,7 +3,7 @@
 void addNote()
 {
     FILE *ptr;
-    int j=160, yr, count=1, exist;
+    int j=160, yr, count=1, exist,num=1;
     char id[10], note[1000], *ti, *day, *date, *m, *x, NID[1000];
     time_t t=time(NULL);
     struct tm tm=*localtime(&t);
@@ -61,8 +61,8 @@ void addNote()
         fprintf(ptr,"%s             %s %s %s %d             %s           %s", id, day, date, m, yr, ti, note);
         fclose(ptr);
         ptr=fopen("personalDiary.txt","a");
-        printf("\n\n\tINTERFACE OF THE DIARY AFTER ADDING A NEW NOTE :) \n\n");
-        for(int i=0;i<175;i++)
+        printf("\n\n\t\t\t\t\t%c INTERFACE OF THE DIARY AFTER ADDING A NEW NOTE %c \n\n",num,num);
+        for(int i=0;i<139;i++)
         {
             printf("\xB2");
         }
@@ -79,7 +79,7 @@ void addNote()
             }
         }
         printf("\xB2\xB2\n");
-        for(int i=0;i<175;i++)
+        for(int i=0;i<139;i++)
         {
             printf("\xB2");
         }
