@@ -1,3 +1,4 @@
 NOTE ID         DATE                        TIME               NOTE
-001             Sun 10 Apr 2022             10:04:01           party timeee
-002             Mon 11 Apr 2022             16:21:40           Done for the day
+001             Thu 14 Apr 2022             10:04:37           Today,I had lots of free time.I went to the movie.
+002             Thu 14 Apr 2022             10:06:35           The day is tiresome.Being a Thursday,tutors have many expectations from us!
+
