@@ -9,7 +9,14 @@
 void menu()
 {
     int again=1, choice;
-    
+    char s[50]="~ ~ ~ ~ ~ WELCOME TO YOUR PERSONAL DIARY ~ ~ ~ ~ ~";
+    printf("\n\t\t\t\t\t\033[0;33m");
+    for(int i=0;i<50;i++)
+    {
+        system("");
+        printf("%c", s[i]);
+    }
+    printf("\033[0m\n");
     while(again==1)
     {
         printf("\nChoose from the following:");
@@ -33,32 +40,40 @@ void menu()
         {
             case 1:
             {
+                printf("\033[0;31m");
                 addNote();
+                printf("\033[0;37m");
                 break;
             }
             case 2:
             {
+                printf("\033[0;36m");
                 if(checkPW()==1)
                 {
                     viewDiary();
                 }
+                printf("\033[0;37m");
                 break;
             }
             case 3:
             {
+                printf("\033[0;32m");
                 if(checkPW()==1)
                 {
                     viewDiary();
                     deleteNote();
                 }
+                printf("\033[0;37m");
                 break;
             }
             case 4:
             {
+                printf("\033[0;35m");
                 if(checkPW()==1)
                 {
                     changePW();
                 }
+                printf("\033[0;37m");
                 break;
             }
             case 5:
