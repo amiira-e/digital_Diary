@@ -9,9 +9,9 @@
 void menu()
 {
     int again=1, choice;
-    char s[50]="~ ~ ~ ~ ~ WELCOME TO YOUR PERSONAL DIARY ~ ~ ~ ~ ~";
+    char s[100]="~ ~ ~ ~ ~ ~ WELCOME TO YOUR PERSONAL DIARY ~ ~ ~ ~ ~ ~";
     printf("\n\t\t\t\t\t\033[0;33m");
-    for(int i=0;i<50;i++)
+    for(int i=0;i<60;i++)
     {
         system("");
         printf("%c", s[i]);
