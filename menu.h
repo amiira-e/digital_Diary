@@ -16,9 +16,9 @@ void menu()
         system("");
         printf("%c", s[i]);
     }
-    printf("\033[0m\n");
     while(again==1)
     {
+        printf("\033[0m\n");
         printf("\nChoose from the following:");
         printf("\n1: Add a note to the diary");
         printf("\n2: View the diary");
@@ -42,7 +42,6 @@ void menu()
             {
                 printf("\033[0;31m");
                 addNote();
-                printf("\033[0;37m");
                 break;
             }
             case 2:
@@ -52,7 +51,6 @@ void menu()
                 {
                     viewDiary();
                 }
-                printf("\033[0;37m");
                 break;
             }
             case 3:
@@ -63,7 +61,6 @@ void menu()
                     viewDiary();
                     deleteNote();
                 }
-                printf("\033[0;37m");
                 break;
             }
             case 4:
@@ -73,7 +70,6 @@ void menu()
                 {
                     changePW();
                 }
-                printf("\033[0;37m");
                 break;
             }
             case 5:
