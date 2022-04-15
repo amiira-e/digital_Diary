@@ -1,5 +1,4 @@
 NOTE ID         DATE                        TIME               NOTE
 001             Thu 14 Apr 2022             10:04:37           Today,I had lots of free time.I went to the movie.
 002             Thu 14 Apr 2022             10:06:35           The day is tiresome.Being a Thursday,tutors have many expectations from us!
-
 005             Fri 15 Apr 2022             10:24:55           It was a wonderful day. I went to the beach with some friends.
