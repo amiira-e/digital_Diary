@@ -5,7 +5,7 @@ void viewDiary()
     FILE *ptr;
     int c;
     ptr=fopen("personal_Diary.txt", "r");
-    printf("\n");
+    printf("\n\n");
     if(ptr==NULL)
     {
         printf("\nERROR!!!\nFile not found.");
@@ -20,15 +20,14 @@ void viewDiary()
         
         while((c=fgetc(ptr))!=EOF)
         {
-            system("COLOR 07");
+            system("");
             printf("%c", c);
         }
         for(int i=0;i<139;i++)
         {
             printf("\xB2");
         }
-        
-        
+        printf("\n");
     }
     fclose(ptr);
 }
