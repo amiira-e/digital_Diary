@@ -3,7 +3,7 @@
 void addNote()
 {
     FILE *ptr;
-    int j=160, yr, count=1, exist,num=1;
+    int j=115, yr, count=1, exist,num=1;
     char id[10], note[1000], *ti, *day, *date, *m, *x, NID[1000];
     time_t t=time(NULL);
     struct tm tm=*localtime(&t);
@@ -75,7 +75,7 @@ void addNote()
             if(i>j && (note[i]==33 || note[i]==46 || note[i]==32))
             {  
                 printf("\n\xB2\xB2\t");
-                j=j+160;
+                j=j+115;
             }
         }
         printf("\xB2\xB2\n");
