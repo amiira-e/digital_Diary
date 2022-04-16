@@ -18,7 +18,7 @@ void menu()
     }
     while(again==1)
     {
-        printf("\033[0m\n");
+        printf("\033[0;37m\n");
         printf("\nChoose from the following:");
         printf("\n1: Add a note to the diary");
         printf("\n2: View the diary");
