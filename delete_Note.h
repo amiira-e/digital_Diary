@@ -13,7 +13,7 @@ void deleteNote()
         fgets(note, sizeof(note), ptr1);
         strcpy(note1, note);
         strtok(note, "             ");
-        if(strcmp(note, NID)!=0)
+        if(strcmp(note, NID)!=0 && strlen(note1)>3)
         {
             fprintf(ptr2,"%s",note1);
         }
